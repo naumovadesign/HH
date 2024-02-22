@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
-<style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <style>
 * {
   box-sizing: border-box;
 }
@@ -93,46 +94,47 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-{ 
-width: 50%;
-margin: auto auto; 
-}
 
-.mycontainer {
-width: 100%;
-position: relative;
-overflow: hidden;
-padding-top: 56.25%;   /* 16:9 Aspect Ratio */
-}
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
 
+        {
+            width: 50%;
+            margin: auto auto;
+        }
 
+        .mycontainer {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
 
-.myiframe {
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-width: 100%;
-height: 100%;
-border: none;
-}
-
-@media screen and (max-width: 800px) {
+        .myiframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        @media screen and (max-width: 800px) {
    body { 
      width: 95%;
      }      
 }
-</style>
+    </style>
 </head>
+
 <body>
 
-<div class="header">
+  <div class="header">
   <h1>IRINA NAUMOVA</h1>
   <p>Solve complex UX challenges, specialize in creating user-friendly interfaces, while observing the guidelines of IOS and Material</p>
 </div>
@@ -143,27 +145,30 @@ border: none;
   <a href="#t3" style="float:right">Contacts</a>
 </div>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2 id="t1">ABOUT ME</h2>
-      <h5>A creative designer with 3+ years of experience in both freelance and team-based design projects. Designed solutions for native mobile and responsive web platforms.</h5>
-	  <br>
-    <table cellspacing="10">
-        <tr>
-            <td>
-                <img src=url("./images/me.jpg");
-            </td>
-            <td>
-                <p>
-                    I run a blog on design topics on Instagram and YouTube, sharing my insights and expertise with a wider audience. With a passion for visual storytelling and a keen eye for detail, I am always up for new challenges and opportunities to grow professionally. I’m looking for a UX|UI designer position at a dynamic growing business.
-                </p>
-            </td>
-        </tr>
-    </table>
-</body>
- 
-    <div class="card">
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2 id="t1">ABOUT ME</h2>
+                <h5>A creative designer with 3+ years of experience in both freelance and team-based design projects.
+                    Designed solutions for native mobile and responsive web platforms.</h5>
+                <br>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <img src="./images/me.jpg" alt="Me">
+                        </td>
+                        <td>
+                            <p>I run a blog on design topics on Instagram and YouTube, sharing my insights and
+                                expertise with a wider audience. With a passion for visual storytelling and a keen eye for
+                                detail, I am always up for new challenges and opportunities to grow professionally. I’m
+                                looking for a UX|UI designer position at a dynamic growing business.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card">
       <h2 id="t2">PORTFOLIO</h2>
       <h5>Check my portfolio on Behance and feel free to send me an inMail or drop me an email. </h5>
       <div class="mycontainer">
@@ -183,18 +188,22 @@ border: none;
   </div>
 </div>
 
-<div class="footer">
-<br>
-    <table cellspacing="10">
-        <tr>
-            <td>
-                <img src=url("./images/logo.png");
-            </td>
-            <td>
-  <h2>Thank you for watching</h2>
-</div>
+            <div class="footer">
+                <br>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <img src="./images/logo.png" alt="Logo">
+                        </td>
+                        <td>
+                            <h2>Thank you for watching</h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>
-
-
