@@ -107,7 +107,7 @@
             }
 
             .mycontainer {
-                padding-top: 56.25%; 
+                padding-top: 56.25%;
             }
         }
 
@@ -115,7 +115,7 @@
             width: 100%;
             position: relative;
             overflow: hidden;
-            padding-top: 56.25%; 
+            padding-top: 56.25%;
         }
 
         .myiframe {
@@ -127,6 +127,35 @@
             width: 100%;
             height: 100%;
             border: none;
+        }
+
+        .about-me {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .about-me__img {
+            width: 300px;
+            height: auto;
+            max-width: 100%;
+        }
+
+        @media screen and (min-width: 768px) {
+            .about-me {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        @media screen and (min-width: 960px) {
+            .about-me {
+                gap: 50px;
+            }
+
+            .about-me__img {
+                width: 400px;
+            }
         }
     </style>
 </head>
@@ -149,18 +178,16 @@
             <h2 id="t1">ABOUT ME</h2>
             <h3>A creative designer with 3+ years of experience in both freelance and team-based design projects. Designed solutions for native mobile and responsive web platforms.</h3>
             <br>
-            <table>
-                <tr>
-                    <td>
-                        <img src="./images/me.jpg" alt="Irina Naumova" style="max-width: 60%;">
-                    </td>
-                    <td>
-                        <p>
-                            I run a blog on design topics on Instagram and YouTube, sharing my insights and expertise with a wider audience. With a passion for visual storytelling and a keen eye for detail, I am always up for new challenges and opportunities to grow professionally. I’m looking for a UX|UI designer position at a dynamic growing business.
-                        </p>
-                    </td>
-                </tr>
-            </table>
+            <div class="about-me">
+                <img src="./images/me.jpg" alt="Irina Naumova" class="about-me__img">
+                <div class="about-me__text">
+                    I run a blog on design topics on Instagram and YouTube,
+                    sharing my insights and expertise with a wider audience.
+                    With a passion for visual storytelling and a keen eye for detail,
+                    I am always up for new challenges and opportunities to grow professionally.
+                    I’m looking for a UX|UI designer position at a dynamic growing business.
+                </div>
+            </div>
         </div>
 
         <div class="card">
@@ -201,4 +228,3 @@
 </body>
 
 </html>
-
